@@ -1,0 +1,58 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ rootNamespace }}Http\Controllers\Controller;
+use {{ namespacedRequests }}
+
+class {{ class }} extends Controller{
+    /**
+     * Exibe uma listagem do recurso.
+     */
+    public function index(){
+        //
+    }
+
+    /**
+     * Mostra o formulário para criar um novo recurso.
+     */
+    public function create(){
+        //
+    }
+
+    /**
+     * Armazena um recurso recém-criado no storage.
+     */
+    public function store({{ storeRequest }} $request){
+        //
+    }
+
+    /**
+     * Exibe o recurso especificado.
+     */
+    public function show({{ model }} ${{ modelVariable }}){
+        //
+    }
+
+    /**
+     * Mostra o formulário para editar o recurso especificado.
+     */
+    public function edit({{ model }} ${{ modelVariable }}){
+        //
+    }
+
+    /**
+     * Atualiza o recurso especificado no storage.
+     */
+    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}){
+        //
+    }
+
+    /**
+     * Remove o recurso especificado do storage.
+     */
+    public function destroy({{ model }} ${{ modelVariable }}){
+        //
+    }
+}

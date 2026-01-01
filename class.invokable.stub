@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}{
+    /**
+     * Cria uma nova instância da classe.
+     */
+    public function __construct(){
+        //
+    }
+
+    /**
+     * Invoca a instância da classe.
+     */
+    public function __invoke(): void{
+        //
+    }
+}

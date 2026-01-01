@@ -1,0 +1,14 @@
+<?php
+
+namespace {{ namespace }};
+
+use PHPUnit\Framework\TestCase;
+
+class {{ class }} extends TestCase{
+    /**
+     * Um exemplo básico de teste unitário.
+     */
+    public function test_example(): void{
+        $this->assertTrue(true);
+    }
+}

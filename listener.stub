@@ -1,0 +1,22 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\InteractsWithQueue;
+
+class {{ class }}{
+    /**
+     * Cria o ouvinte do evento.
+     */
+    public function __construct(){
+        //
+    }
+
+    /**
+     * Trata o evento.
+     */
+    public function handle(object $event): void{
+        //
+    }
+}

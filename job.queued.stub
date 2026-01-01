@@ -1,0 +1,24 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Queue\Queueable;
+
+class {{ class }} implements ShouldQueue{
+    use Queueable;
+
+    /**
+     * Cria uma nova instância do job.
+     */
+    public function __construct(){
+        //
+    }
+
+    /**
+     * Executa o job.
+     */
+    public function handle(): void{
+        //
+    }
+}

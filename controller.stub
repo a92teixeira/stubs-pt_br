@@ -1,0 +1,57 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller{
+    /**
+     * Exibe uma listagem do recurso.
+     */
+    public function index(){
+        //
+    }
+
+    /**
+     * Mostra o formulário para criar um novo recurso.
+     */
+    public function create(){
+        //
+    }
+
+    /**
+     * Armazena um recurso recém-criado no storage.
+     */
+    public function store(Request $request){
+        //
+    }
+
+    /**
+     * Exibe o recurso especificado.
+     */
+    public function show(string $id){
+        //
+    }
+
+    /**
+     * Mostra o formulário para editar o recurso especificado.
+     */
+    public function edit(string $id){
+        //
+    }
+
+    /**
+     * Atualiza o recurso especificado no storage.
+     */
+    public function update(Request $request, string $id){
+        //
+    }
+
+    /**
+     * Remove o recurso especificado do storage.
+     */
+    public function destroy(string $id){
+        //
+    }
+}

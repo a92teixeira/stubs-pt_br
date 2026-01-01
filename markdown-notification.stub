@@ -1,0 +1,46 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Notification;
+
+class {{ class }} extends Notification{
+    use Queueable;
+
+    /**
+     * Cria uma nova instância da notificação.
+     */
+    public function __construct(){
+        //
+    }
+
+    /**
+     * Obtém os canais de entrega da notificação.
+     *
+     * @return array<int, string>
+     */
+    public function via(object $notifiable): array{
+        return ['mail'];
+    }
+
+    /**
+     * Obtém a representação em email da notificação.
+     */
+    public function toMail(object $notifiable): MailMessage{
+        return (new MailMessage)->markdown('{{ view }}');
+    }
+
+    /**
+     * Obtém a representação em array da notificação.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(object $notifiable): array{
+        return [
+            //
+        ];
+    }
+}

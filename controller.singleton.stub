@@ -1,0 +1,50 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller{
+    /**
+     * Mostra o formulário para criar o recurso.
+     */
+    public function create(): never{
+        abort(404);
+    }
+
+    /**
+     * Armazena o recurso recém-criado no storage.
+     */
+    public function store(Request $request): never{
+        abort(404);
+    }
+
+    /**
+     * Exibe o recurso.
+     */
+    public function show(){
+        //
+    }
+
+    /**
+     * Mostra o formulário para editar o recurso.
+     */
+    public function edit(){
+        //
+    }
+
+    /**
+     * Atualiza o recurso no storage.
+     */
+    public function update(Request $request){
+        //
+    }
+
+    /**
+     * Remove o recurso do storage.
+     */
+    public function destroy(): never{
+        abort(404);
+    }
+}

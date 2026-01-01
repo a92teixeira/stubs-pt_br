@@ -1,0 +1,58 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Auth\Access\Response;
+use {{ namespacedModel }};
+use {{ namespacedUserModel }};
+
+class {{ class }}{
+    /**
+     * Determina se o usuário pode visualizar quaisquer models.
+     */
+    public function viewAny({{ user }} $user): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode visualizar o model.
+     */
+    public function view({{ user }} $user, {{ model }} ${{ modelVariable }}): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode criar models.
+     */
+    public function create({{ user }} $user): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode atualizar o model.
+     */
+    public function update({{ user }} $user, {{ model }} ${{ modelVariable }}): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode deletar o model.
+     */
+    public function delete({{ user }} $user, {{ model }} ${{ modelVariable }}): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode restaurar o model.
+     */
+    public function restore({{ user }} $user, {{ model }} ${{ modelVariable }}): bool{
+        return false;
+    }
+
+    /**
+     * Determina se o usuário pode deletar permanentemente o model.
+     */
+    public function forceDelete({{ user }} $user, {{ model }} ${{ modelVariable }}): bool{
+        return false;
+    }
+}

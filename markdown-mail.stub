@@ -1,0 +1,48 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Queue\SerializesModels;
+
+class {{ class }} extends Mailable{
+    use Queueable, SerializesModels;
+
+    /**
+     * Cria uma nova instância da mensagem.
+     */
+    public function __construct(){
+        //
+    }
+
+    /**
+     * Obtém o envelope da mensagem.
+     */
+    public function envelope(): Envelope{
+        return new Envelope(
+            subject: '{{ subject }}',
+        );
+    }
+
+    /**
+     * Obtém a definição de conteúdo da mensagem.
+     */
+    public function content(): Content{
+        return new Content(
+            markdown: '{{ view }}',
+        );
+    }
+
+    /**
+     * Obtém os anexos da mensagem.
+     *
+     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     */
+    public function attachments(): array{
+        return [];
+    }
+}
